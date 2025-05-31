@@ -22,6 +22,19 @@ The formula takes the input of a table where the goal is to unpivot the columns 
   )
 )
 ```
+### Usage
+
+**Input:**
+Data it takes in is the entire table including the headers and first column:
+
+|   Games  | Game 1 | Game 2 |
+|----------|--------|--------|
+| Person 1 |  Data  |  Data  |
+| Person 2 |  Data  |  Data  |
+
+**Output**
+Will tranform the data into the following output:
+
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Row 1    | Data     | More     |
