@@ -28,10 +28,11 @@ The formula takes the input of a table where the goal is to unpivot the columns 
 
 Data it takes in is the entire table including the headers and first column:
 
-|          | Game 1 | Game 2 |
-|----------|--------|--------|
-| Person 1 |  Data  |  Data  |
-| Person 2 |  Data  |  Data  |
+|          | Game 1 | Game 2 | Game 3 |
+|----------|--------|--------|--------|
+| Person 1 |  Data  |  Data  |  Data  |
+| Person 2 |  Data  |  Data  |  Data  |
+| Person 3 |  Data  |  Data  |  Data  |
 
 **Output:**
 
@@ -41,8 +42,13 @@ Will tranform the data into the following output:
 |----------|--------|------|
 | Person 1 | Game 1 | Data |
 | Person 1 | Game 2 | Data |
+| Person 1 | Game 3 | Data |
 | Person 2 | Game 1 | Data |
 | Person 2 | Game 2 | Data |
+| Person 2 | Game 3 | Data |
+| Person 3 | Game 1 | Data |
+| Person 3 | Game 2 | Data |
+| Person 3 | Game 3 | Data |
 
 
 
