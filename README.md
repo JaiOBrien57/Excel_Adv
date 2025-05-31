@@ -50,6 +50,27 @@ Will tranform the data into the following output:
 | Person 3 | Game 2 | Data |
 | Person 3 | Game 3 | Data |
 
+## Amex Formula
+
+### Description
+
+desc
+
+### Formula (Lambda Named Format)
+
+```
+=LAMBDA(dat
+```
+### Usage
+
+**Input:**
+
+Text
+
+**Output:**
+
+Text
+
 
 
 
