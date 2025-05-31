@@ -37,7 +37,7 @@ Data it takes in is the entire table including the headers and first column:
 
 Will tranform the data into the following output:
 
-|          |        |      |
+|  People  |  Games | Data |
 |----------|--------|------|
 | Person 1 | Game 1 | Data |
 | Person 1 | Game 2 | Data |
