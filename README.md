@@ -1,6 +1,12 @@
 # Excel Formula List
 
-# Named Lambda Formulas
+## Named Lambda Formulas
+
+### Description
+
+The formula takes the input of a table where the goal is to unpivot the columns of the table into a vertical list of data which can be used for formulas and pivot tables.
+
+### Formula (Lambda Named Format)
 
 ```
 =LAMBDA(data,
