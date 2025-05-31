@@ -1,7 +1,7 @@
 # Excel_Adv
 
 
-`=LAMBDA(data,
+````=LAMBDA(data,
   LET(
     nRows, ROWS(data) - 1,
     nCols, COLUMNS(data) - 1,
