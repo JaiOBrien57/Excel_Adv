@@ -9,18 +9,18 @@ The formula takes the input of a table where the goal is to unpivot the columns 
 ### Formula (Lambda Named Format)
 
 ```
-=LAMBDA(data,
-  LET(
-    nRows, ROWS(data) - 1,
-    nCols, COLUMNS(data) - 1,
-    ids, INDEX(data, SEQUENCE(nRows * nCols,,1,1) + 1, 1),
-    months, INDEX(data, 1, SEQUENCE(nRows * nCols,,2,1)),
-    values, INDEX(data, 
-                  INT((SEQUENCE(nRows * nCols,,1,1) - 1)/nCols) + 2, 
-                  MOD(SEQUENCE(nRows * nCols,,0,1), nCols) + 2),
-    HSTACK(ids, months, values)
-  )
-)
+=LAMBDA(table,LET(
+    data, INDEX(table, SEQUENCE(ROWS(table)-1, 1, 2), SEQUENCE(1, COLUMNS(table))),
+    names, INDEX(data,,1),
+    headers, INDEX(table,1,),
+    nRows, ROWS(data),
+    nCols, COLUMNS(data)-1,
+    rowSeq, SEQUENCE(nRows*nCols),
+    nameCol, INDEX(names, INT((rowSeq-1)/nCols)+1),
+    monthCol, INDEX(headers, 1, MOD(rowSeq-1, nCols)+2),
+    valueCol, INDEX(data, INT((rowSeq-1)/nCols)+1, MOD(rowSeq-1, nCols)+2),
+    HSTACK(nameCol, monthCol, valueCol)
+))
 ```
 ### Usage
 
