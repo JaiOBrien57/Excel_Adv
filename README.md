@@ -13,5 +13,4 @@
                   MOD(SEQUENCE(nRows * nCols,,0,1), nCols) + 2),
     HSTACK(ids, months, values)
   )
-)
-`
+)`
