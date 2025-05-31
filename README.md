@@ -1,5 +1,6 @@
-# Excel_Adv
+# Excel Formula List
 
+# Named Lambda Formulas
 
 ```
 =LAMBDA(data,
