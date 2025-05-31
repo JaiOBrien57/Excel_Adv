@@ -1,6 +1,6 @@
 # Excel Formula List
 
-## Named Lambda Formulas
+## Unpivot Table Formula
 
 ### Description
 
