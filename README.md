@@ -22,5 +22,14 @@ The formula takes the input of a table where the goal is to unpivot the columns 
   )
 )
 ```
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1    | Data     | More     |
+| Row 2    | Info     | Values   |
+
+
+
+
+
 
 text
