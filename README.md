@@ -1,7 +1,7 @@
 # Excel_Adv
 
 
-````
+```
 =LAMBDA(data,
   LET(
     nRows, ROWS(data) - 1,
@@ -13,4 +13,7 @@
                   MOD(SEQUENCE(nRows * nCols,,0,1), nCols) + 2),
     HSTACK(ids, months, values)
   )
-)`
+)
+```
+
+text
