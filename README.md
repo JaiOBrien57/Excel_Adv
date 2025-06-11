@@ -65,14 +65,19 @@ Takes a value and adds on the amex value (1% currently, change as needed) as a m
 
 **Input:**
 
+Takes in a value before the amex fee:
+
 $100.00
 
 **Output:**
 
-|----------|--------|------|
-| Person 1 | Game 1 | Data |
-| Person 1 | Game 2 | Data |
-| Person 1 | Game 3 | Data |
+Outputs a table displaying the % markup:
+
+|                   |        |      |
+|-------------------|--------|------|
+|  Invoice Amount:  | Game 1 | Data |
+|  Total AMEX:      | Game 2 | Data |
+| Fee               | Game 3 | Data |
 
 
 
