@@ -126,7 +126,7 @@ Takes in a return list (Value column in this case):
 
 **Output:**
 
-Outputs a table displaying the % markup:
+Outputs all the values from the check list that match the search terms, ignoring any that don't match:
 
 | Results|
 |--------|
