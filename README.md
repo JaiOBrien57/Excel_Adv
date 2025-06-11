@@ -54,12 +54,12 @@ Will tranform the data into the following output:
 
 ### Description
 
-desc
+Takes a value and adds on the amex value (1% currently, change as needed) as a markup and displays the output in a table.
 
 ### Formula (Lambda Named Format)
 
 ```
-=LAMBDA(dat
+=LAMBDA(amount,HSTACK(VSTACK("Invoice Amount:","Total AMEX:","Fee"),VSTACK(amount,ROUND(amount/(1-0.01),2),ROUND((amount/(1-0.01))-amount,2))))
 ```
 ### Usage
 
