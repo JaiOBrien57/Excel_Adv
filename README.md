@@ -79,6 +79,61 @@ Outputs a table displaying the % markup:
 |  Total AMEX:      | 101.01 |
 | Fee               | 1.01   |
 
+## Filter List Containing Multiple Strings (Reduce Lambda)
+
+### Description
+
+Takes in a list of possible names to filter by and loops over a range of data to filter it by equaling any of those possible names in search list.
+
+### Formula (Lambda Named Format)
+
+```
+=LAMBDA(searchList,checkList,returnList,LET(x,REDUCE("",FILTER(searchList,searchList<>""),LAMBDA(init,curr,VSTACK(init,IFERROR(FILTER(returnList,checkList=curr),"")))),FILTER(x,x<>"")))
+```
+### Usage
+
+**Input:**
+
+Takes in a search list:
+
+|  Search Terms  |
+|----------------|
+| Cat            |
+| Dog            |
+
+Takes in a list to check against (Type Column in this case):
+
+| Type | Value  |
+|------|--------|
+| Cat  | Cat 1  |
+| Cat  | Cat 2  |
+| Dog  | Dog 1  |
+| Fish | Fish 1 |
+| Bird | Bird 1 |
+| Cat  | Cat 3  |
+
+Takes in a return list (Value column in this case):
+
+| Type | Value  |
+|------|--------|
+| Cat  | Cat 1  |
+| Cat  | Cat 2  |
+| Dog  | Dog 1  |
+| Fish | Fish 1 |
+| Bird | Bird 1 |
+| Cat  | Cat 3  |
+
+
+**Output:**
+
+Outputs a table displaying the % markup:
+
+| Results|
+|--------|
+| Cat 1  |
+| Cat 2  |
+| Cat 3  |
+| Dog 1  |
 
 
 
