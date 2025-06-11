@@ -135,5 +135,24 @@ Outputs all the values from the check list that match the search terms, ignoring
 | Cat 3  |
 | Dog 1  |
 
+## Filter Data Accross Multiple Tabs Using Dynamic Search List (Reduce Lambda)
+
+### Description
+
+TBC
+
+### Formula (Lambda Named Format)
+
+```
+=
+```
+### Usage
+
+**Input:**
+
+
+**Output:**
+
+
 
 
