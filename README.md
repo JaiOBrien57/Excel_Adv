@@ -65,11 +65,14 @@ Takes a value and adds on the amex value (1% currently, change as needed) as a m
 
 **Input:**
 
-Text
+$100.00
 
 **Output:**
 
-Text
+|----------|--------|------|
+| Person 1 | Game 1 | Data |
+| Person 1 | Game 2 | Data |
+| Person 1 | Game 3 | Data |
 
 
 
