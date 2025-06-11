@@ -73,11 +73,11 @@ $100.00
 
 Outputs a table displaying the % markup:
 
-|                   |        |      |
-|-------------------|--------|------|
-|  Invoice Amount:  | Game 1 | Data |
-|  Total AMEX:      | Game 2 | Data |
-| Fee               | Game 3 | Data |
+|                   |        |
+|-------------------|--------|
+|  Invoice Amount:  | 100    |
+|  Total AMEX:      | 101.01 |
+| Fee               | 1.01   |
 
 
 
